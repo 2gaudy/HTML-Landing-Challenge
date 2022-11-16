@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+p {
+  font-size: 15px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -10,8 +14,52 @@ header {
   height: 15vh;
 }
 header svg {
-  padding: 50px;
+  padding: 60px;
 }
 header ul {
-  padding: 50px;
+  padding: 60px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+header ul li {
+  padding: 15px;
+}
+
+.landing-full {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 70vh;
+  justify-content: space-between;
+}
+
+.landing {
+  margin: 10px 10px 20px 60px;
+  width: 45vw;
+  height: 50vh;
+}
+.landing img {
+  max-width: 60vw;
+  max-height: 60vh;
+}
+
+aside {
+  display: flex;
+  max-width: 30vw;
+  max-height: 60vh;
+  flex-direction: column;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 25px;
+  margin: 15px;
+}
+aside .aside-head {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 40px;
+}
+aside h1 {
+  color: hsl(36deg, 100%, 99%);
+}
+aside h2 {
+  color: hsl(36deg, 100%, 99%);
 }/*# sourceMappingURL=styles.css.map */

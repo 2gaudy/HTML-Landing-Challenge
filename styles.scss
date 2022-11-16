@@ -1,8 +1,18 @@
+$orange: hsl(35, 77%, 62%);
+$red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-gray-blue: hsl(236, 13%, 42%);
+$dark-blue: hsl(240, 100%, 5%);
 
 body {
     margin: 0;
     padding: 0;
     
+}
+
+p {
+    font-size: 15px;
 }
 
 header {
@@ -12,10 +22,61 @@ header {
     height: 15vh;
 
     svg {
-        padding: 50px;
+        padding: 60px;
+        
     }
 
     ul{
-        padding: 50px;
+        padding: 60px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: 15px;
+        }
     }
+}
+
+.landing-full{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.landing {
+    margin: 10px 10px 20px 60px;
+    width: 45vw;
+    height: 50vh;
+
+    img{
+        max-width: 60vw;
+        max-height: 60vh;
+
+    }
+}
+
+aside {
+    display: flex;
+    max-width: 30vw;
+    max-height: 60vh;
+    flex-direction: column;
+    background-color: $dark-blue;
+    padding: 25px;
+    margin: 15px;
+
+    .aside-head{
+        color: $orange;
+        font-size: 40px;
+    }
+
+    h1 {
+        color: $off-white;
+    }
+    h2 {
+        color: $off-white;
+    }
+
 }
