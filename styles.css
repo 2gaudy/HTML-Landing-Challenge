@@ -1,18 +1,27 @@
 body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 0;
-  padding: 0;
+  padding: 40px;
+  background-color: hsl(36deg, 100%, 99%);
 }
 
 p {
   font-size: 15px;
   color: hsl(233deg, 8%, 79%);
+  line-height: 1.2;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 90vw;
   height: 15vh;
+  margin-left: 100px;
 }
 header svg {
   padding: 65px;
@@ -22,9 +31,21 @@ header ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  height: 15px;
 }
 header ul li {
   padding: 15px;
+}
+header ul li a::visited {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 500;
+}
+header ul li a {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .landing-full {
@@ -32,12 +53,13 @@ header ul li {
   flex-direction: row;
   width: 100vw;
   height: 70vh;
-  justify-content: space-around;
-  margin: 20px;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
 }
 
 .landing-main {
-  margin: 10px;
+  margin: 30px;
   width: 60vw;
   height: 65vh;
   display: flex;
@@ -48,6 +70,7 @@ header ul li {
   width: 60vw;
   max-height: 35vh;
   margin: 10px;
+  margin-top: 0px;
   align-self: flex-start;
 }
 .landing-main .landing-text {
@@ -61,22 +84,29 @@ header ul li {
 }
 .landing-main .landing-text h1 {
   height: 20vh;
+  width: 25vw;
+  font-weight: 900;
   font-size: 60px;
 }
 .landing-main .landing-text-right {
   display: flex;
   flex-direction: column;
+  height: 23vh;
+  width: 30vw;
+  justify-content: space-between;
 }
 .landing-main .landing-text-right p {
   height: 10vh;
+  line-height: 30px;
 }
 .landing-main .landing-text-right span {
-  width: 10vw;
-  height: 5vh;
+  width: 15vw;
+  height: 7.5vh;
   background-color: hsl(5deg, 85%, 63%);
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
 }
 .landing-main .landing-text-right span a:visited {
   text-decoration: none;
@@ -86,16 +116,17 @@ header ul li {
 .landing-main .landing-text-right span a {
   color: hsl(36deg, 100%, 99%);
   text-decoration: none;
+  font-size: 30px;
 }
 
 aside {
   display: flex;
   max-width: 25vw;
-  max-height: 60vh;
+  height: 58vh;
   flex-direction: column;
   background-color: hsl(240deg, 100%, 5%);
   padding: 25px;
-  margin: 15px;
+  margin: 5px;
   justify-content: space-between;
 }
 aside hr {
@@ -111,4 +142,41 @@ aside h1 {
 }
 aside h2 {
   color: hsl(36deg, 100%, 99%);
+}
+
+footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  margin-left: 150px;
+  flex-direction: row;
+}
+footer article {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+footer article img {
+  height: 150px;
+  width: 125px;
+}
+footer article div {
+  display: flex;
+  flex-direction: column;
+  min-height: 5vh;
+  min-width: 10vh;
+  margin: 10px;
+}
+footer article div h2 {
+  margin: 5px;
+}
+footer article div h3 {
+  margin: 5px;
+}
+footer article div p {
+  margin: 5px;
 }/*# sourceMappingURL=styles.css.map */
