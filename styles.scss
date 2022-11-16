@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 15vh;
+
+    svg {
+        padding: 50px;
+    }
+
+    ul{
+        padding: 50px;
+    }
+}

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 15vh;
+}
+header svg {
+  padding: 50px;
+}
+header ul {
+  padding: 50px;
+}/*# sourceMappingURL=styles.css.map */
